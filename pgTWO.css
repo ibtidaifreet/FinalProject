@@ -1,0 +1,152 @@
+body {background-color: white;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-box{
+    font-size: 37px;
+    font-family: sans-serif;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+.heading {
+  display: flex;
+  justify-content: center;
+}
+.a, .b, .c, .d, .{
+  display: flex;
+  justify-content: center;
+}
+span{
+    animation: mover 6s linear infinite;
+    display: inline-block;
+    color: #eff9fe;
+    font-weight: bolder;
+}
+span p{
+  text-align: justify;
+  text-indent: inherit;
+
+}
+
+@keyframes mover
+{
+    0%{
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+      }
+    50%{
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0.30);
+        transform: translateY(30px);
+      }
+    100%
+      {
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+      }
+}
+
+@keyframes example {
+  0%   {background-color: #DD2F1B;}
+  25%  {background-color: #DFFF12;}
+  50%  {background-color: #12FFCF;}
+  100% {background-color: #FF12FB;}
+}
+span:nth-child(1)
+{
+    animation-delay: 0.5s;
+}
+span:nth-child(2)
+{
+    animation-delay: 1s;
+}
+span:nth-child(3)
+{
+    animation-delay: 1.5s;
+}
+span:nth-child(4)
+{
+    animation-delay: 2s;
+}
+span:nth-child(5)
+{
+    animation-delay: 2.5s;
+}
+span:nth-child(6)
+{
+    animation-delay: 3s;
+}
+span:nth-child(7)
+{
+    animation-delay: 3.5s;
+}
+
+.typing-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size:15px;
+  font-family:monospace;
+  border-radius:50px;
+}
+.typing-text p {
+  margin:0px;
+  white-space:nowrap;
+  overflow:hidden;
+  animation:typing 4s steps(22,end) forwards,
+            blink 1s infinite;
+}
+@keyframes typing {
+  0% { width:0% }
+  100% { width:100% }
+}
+@keyframes blink {
+  0%,100% {
+    border-right:2px solid transparent;
+  }
+  50% {
+    border-right:2px solid #222;
+  }
+}
+.fruit-four, .fruit-five, .fruit-six, .drinks-four, .drinks-five, .drinks-six{
+  cursor: pointer;
+}
+
+
+.happy-text{
+color:white;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 15px;
+
+}
+
+.reset-button{
+  background-color: #98fb98;
+  color: navyblue;
+  font-style: oblique;
+  font-weight: bolder;
+  padding: 16px;
+  font-size: 16px;
+  border:none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.fruits, .drinks{
+  display: flex;
+  justify-content: center;
+}
+.fruits button, .drinks button{
+  margin: 10px;
+}
+.result{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
